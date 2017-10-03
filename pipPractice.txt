@@ -1,0 +1,75 @@
+
+First try to install:
+
+$ pip install Djando
+Collecting Djando
+  Could not find a version that satisfies the requirement Djando (from versions: )
+No matching distribution found for Djando
+
+TGrigorieva@DNC-TGRIGOREVA MINGW64 /c/users/tgrigorieva/desktop (master)
+
+	- googled the error and found the anwer:
+
+		pip install --upgrade django
+
+
+$ pip install --upgrade django
+Collecting django
+  Downloading Django-1.11.5-py2.py3-none-any.whl (6.9MB)
+Collecting pytz (from django)
+  Downloading pytz-2017.2-py2.py3-none-any.whl (484kB)
+Installing collected packages: pytz, django
+Successfully installed django-1.11.5 pytz-2017.2
+
+
+$ pip list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+click (6.7)
+Django (1.11.5)
+itsdangerous (0.24)
+Jinja2 (2.9.6)
+MarkupSafe (1.0)
+nose (1.3.7)
+pip (9.0.1)
+pytz (2017.2)
+setuptools (28.8.0)
+virtualenv (15.1.0)
+virtualenvwrapper-win (1.2.1)
+Werkzeug (0.12.2)
+
+$ pip install Djando
+Collecting Djando
+  Could not find a version that satisfies the requirement Djando (from versions: )
+No matching distribution found for Djando
+
+$ pip freeze
+click==6.7
+Django==1.11.5
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+nose==1.3.7
+pytz==2017.2
+virtualenv==15.1.0
+virtualenvwrapper-win==1.2.1
+Werkzeug==0.12.2
+
+TGrigorieva@DNC-TGRIGOREVA MINGW64 /c/users/tgrigorieva/desktop (master)
+$ ls
+30018_object_pascal_handbook_by_marco_cantu/  mongoHW46/
+Back2zip.lnk*                                 mongomart/
+C++Builder XE7.lnk*                           NodeFirebaseCrash/
+Delphi XE7.lnk*                               QR-DelphiXE7-install.txt
+desktop.ini                                   queryOperatorsInNodeJSDriver/
+DojoAssignments/                              Remote Support 10.exe*
+jZip.lnk*                                     requirements.txt
+Microsoft Visual Studio 2008 - Shortcut.lnk*  scan (SVNCSHARES) - Shortcut.lnk*
+Microsoft Visual Studio 2008.lnk*             Start Tor Browser.lnk*
+MongoDB Compass.lnk*                          TGrigorieva - Shortcut.lnk*
+
+requirements.txt - has a list of libraries like "freeze" reported
+
+TGrigorieva@DNC-TGRIGOREVA MINGW64 /c/users/tgrigorieva/desktop (master)
+$ pip search Flask
+Flask-User-05 (0.5)                            - Customizable User Account Management for Flask: Register, Confirm email, Login, Change username, Change password, Forgot password and more.
+...
